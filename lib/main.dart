@@ -1,17 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart' show WidgetTester, expect, find, findsOneWidget, testWidgets;
-import 'package:veevex/main.dart';
 
 void main() {
-  testWidgets('SignupScreen test', (WidgetTester tester) async {
-    await tester.pumpWidget(const MaterialApp(home: SignupScreen()));
-
-    expect(find.text('Create an account'), findsOneWidget);
-    expect(find.text('Continue'), findsOneWidget);
-  });
+  runApp(const MaterialApp(debugShowCheckedModeBanner: false, home: SignupScreen()));
 }
-
-
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
