@@ -57,4 +57,3 @@ class SignupScreen extends StatelessWidget {
       label: Text(text, style: const TextStyle(color: Colors.black)),
     );
   }
-}
