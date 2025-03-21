@@ -16,10 +16,13 @@ class SignupScreen extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text("Veevex", style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
+              const Text("Veevex",
+                  style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
               const SizedBox(height: 10),
-              const Text("Create an account", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
-              const Text("Enter your email to sign up", style: TextStyle(color: Colors.grey)),
+              const Text("Create an account",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
+              const Text("Enter your email to sign up",
+                  style: TextStyle(color: Colors.grey)),
               const SizedBox(height: 20),
               const TextField(
                 decoration: InputDecoration(
@@ -34,7 +37,8 @@ class SignupScreen extends StatelessWidget {
                   minimumSize: const Size(double.infinity, 50),
                 ),
                 onPressed: () {},
-                child: const Text("Continue", style: TextStyle(color: Colors.white)),
+                child: const Text(
+                    "Continue", style: TextStyle(color: Colors.white)),
               ),
               const SizedBox(height: 15),
               const Text("or", style: TextStyle(color: Colors.grey)),
@@ -51,9 +55,11 @@ class SignupScreen extends StatelessWidget {
 
   Widget _buildSocialButton(IconData icon, String text) {
     return OutlinedButton.icon(
-      style: OutlinedButton.styleFrom(minimumSize: const Size(double.infinity, 50)),
+      style: OutlinedButton.styleFrom(
+          minimumSize: const Size(double.infinity, 50)),
       onPressed: () {},
       icon: Icon(icon, color: Colors.black),
       label: Text(text, style: const TextStyle(color: Colors.black)),
     );
   }
+}
