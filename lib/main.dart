@@ -51,10 +51,10 @@ class SignupScreen extends StatelessWidget {
 
   Widget _buildSocialButton(IconData icon, String text) {
     return OutlinedButton.icon(
-        style: OutlinedButton.styleFrom(minimumSize: const Size(double.infinity, 50)),
-        onPressed: () {},
-        icon: Icon(icon, color: Colors.black),
-        label: Text(text, style: const TextStyle(color: Colors.black)),
+      style: OutlinedButton.styleFrom(minimumSize: const Size(double.infinity, 50)),
+      onPressed: () {},
+      icon: Icon(icon, color: Colors.black),
+      label: Text(text, style: const TextStyle(color: Colors.black)),
     );
   }
 }
